@@ -1,0 +1,23 @@
+import React from "react";
+
+const Footer = () => {
+  const getCurrentYear = () => {
+    const date = new Date();
+    return date.getFullYear();
+  };
+
+  return (
+    <footer class="footer">
+      <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
+         TsavoERP Limited
+        </span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+          Copyright © {getCurrentYear()}. All rights reserved.
+        </span>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

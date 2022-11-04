@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "target": "es2015",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "sourceMap": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "incremental": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "paths": {
+        "@assets/*": ["./src/assets/*"],
+        "@components/*": ["./src/components/*"],
+        "@public/*": ["./src/public/*"],
+        "@models/*": ["./src/domain/models/*"],
+        "@enums/*": ["./src/domain/enums/*"],
+        "@redux/*": ["./src/redux/*"],
+        "@utilities/*": ["./src/utilities/*"],
+      }
+    },
+    "include": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.scss",
+      "**/*.css",
+      "**/*.png",
+      "**/*.jpg",
+      "**/*.jpeg",
+      "**/*.svg",
+      "**/*.webp"
+    ],
+    "exclude": ["node_modules"]
+  }
+  
