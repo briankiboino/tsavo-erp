@@ -1,3 +1,4 @@
+/* eslint-disable */
 import persistPlugin from "@rematch/persist";
 import loadingPlugin, { ExtraModelsFromLoading } from "@rematch/loading"
 import { init, RematchDispatch, RematchRootState } from '@rematch/core'

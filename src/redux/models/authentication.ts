@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createModel } from "@rematch/core";
 import type { RootModel } from ".";
 import { UserCredentials } from "@models/index";

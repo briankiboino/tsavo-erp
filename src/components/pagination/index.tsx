@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { PaginatedData } from "@models/index";
 import React from "react";
 
