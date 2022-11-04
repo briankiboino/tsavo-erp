@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { caseEnums } from "../utilities/enums";
 import Moment from "react-moment";
 

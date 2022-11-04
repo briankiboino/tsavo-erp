@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Customer } from "../../../domain/models";
 import React from "react";
 import BreadCrumb from "../../../components/bread-crumb";

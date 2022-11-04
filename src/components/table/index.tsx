@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { tableHelpers } from "src/helpers/table";
 
