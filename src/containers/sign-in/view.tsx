@@ -35,8 +35,8 @@ const SignInView = ({
                     height="200"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY"
                   ></iframe>
-                  <h2 className="mt-4">Product Tours</h2>
-                  <p className="mb-4">Watch these tutorials to get most out of our Wealthbox</p>
+                  <h2 className="mt-4 mb-4">Product Tours</h2>
+                  <h5 className="mb-4">Watch these tutorials to get most out of our Wealthbox</h5>
                   <a href="#">Learn more</a>
                 </div>
                 <div className="col-lg-7 px-5 py-4">
@@ -116,10 +116,10 @@ const SignInView = ({
                           </button>
                         </div>
                         <div className="mb-3 d-flex justify-content-between">
-                          <p>
+                          <h5>
                             New to Tsavo? <a href="#">Sign up</a>
-                          </p>
-                          <p>Forgot password?</p>
+                          </h5>
+                          <h5>Forgot password?</h5>
                         </div>
                       </form>
                     )}
