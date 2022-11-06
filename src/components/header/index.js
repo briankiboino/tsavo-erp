@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import userimage from "../../assets/default-user-image.png";
 import { SUPER_ADMIN_ROUTES } from "../../utilities";
 import { Link } from "react-router-dom";
-import logo from "../../assets/tsavo-erp-logo.jpeg";
+import logo from "../../assets/tsavo-erp-logo-removebg-preview.png";
 
 const Header = (props) => {
   const { position, username, signOut } = props;

@@ -21,80 +21,88 @@ const Dashboard = (props) => {
                 role="tabpanel"
                 aria-labelledby="overview"
               >
-                <div className="row">
-                  <div className="col-sm-12">
-                    <div className="statistics-details row">
-                      <div className="card bg-light card-rounded stretch-card col-md-2 me-1">
-                        <div className="card-body pb-0">
-                          <h4 className="card-title card-title-dash text-dark mb-4">
-                            Total Projects
-                          </h4>
-                          <h3 className="rate-percentage">32.53%</h3>
-                          <p className="text-danger d-flex">
-                            <i className="mdi mdi-menu-down"></i>
-                            <span>-0.5%</span>
-                          </p>
-                        </div>
+                <div className="row mb-5">
+                  <div className="col-lg-2">
+                    <div className="card bg-light card-rounded stretch-card">
+                      <div className="card-body pb-0">
+                        <h4 className="card-title card-title-dash text-dark mb-4">
+                          Total Projects
+                        </h4>
+                        <h3 className="rate-percentage">32.53%</h3>
+                        <p className="text-danger d-flex">
+                          <i className="mdi mdi-menu-down"></i>
+                          <span>-0.5%</span>
+                        </p>
                       </div>
-                      <div className="card bg-light card-rounded col-md-2 me-1">
-                        <div className="card-body pb-0">
-                          <h4 className="card-title card-title-dash text-dark mb-4">
-                            Total Clients
-                          </h4>
-                          <h3 className="rate-percentage">32.53%</h3>
-                          <p className="text-danger d-flex">
-                            <i className="mdi mdi-menu-down"></i>
-                            <span>-0.5%</span>
-                          </p>
-                        </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2">
+                    <div className="card bg-light card-rounded stretch-card">
+                      <div className="card-body pb-0">
+                        <h4 className="card-title card-title-dash text-dark mb-4">
+                          Total Clients
+                        </h4>
+                        <h3 className="rate-percentage">32.53%</h3>
+                        <p className="text-danger d-flex">
+                          <i className="mdi mdi-menu-down"></i>
+                          <span>-0.5%</span>
+                        </p>
                       </div>
-                      <div className="card bg-light card-rounded col-md-2 me-1">
-                        <div className="card-body pb-0">
-                          <h4 className="card-title card-title-dash text-dark mb-4">
-                            Due Invoices
-                          </h4>
-                          <h3 className="rate-percentage">32.53%</h3>
-                          <p className="text-danger d-flex">
-                            <i className="mdi mdi-menu-down"></i>
-                            <span>-0.5%</span>
-                          </p>
-                        </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2">
+                    <div className="card bg-light card-rounded stretch-card">
+                      <div className="card-body pb-0">
+                        <h4 className="card-title card-title-dash text-dark mb-4">
+                          Due Invoices
+                        </h4>
+                        <h3 className="rate-percentage">32.53%</h3>
+                        <p className="text-danger d-flex">
+                          <i className="mdi mdi-menu-down"></i>
+                          <span>-0.5%</span>
+                        </p>
                       </div>
-                      <div className="card bg-light card-rounded col-md-2 me-1">
-                        <div className="card-body pb-0">
-                          <h4 className="card-title card-title-dash text-dark mb-4">
-                            Pending Tasks
-                          </h4>
-                          <h3 className="rate-percentage">32.53%</h3>
-                          <p className="text-danger d-flex">
-                            <i className="mdi mdi-menu-down"></i>
-                            <span>-0.5%</span>
-                          </p>
-                        </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2">
+                    <div className="card bg-light card-rounded stretch-card">
+                      <div className="card-body pb-0">
+                        <h4 className="card-title card-title-dash text-dark mb-4">
+                          Pening Tasks
+                        </h4>
+                        <h3 className="rate-percentage">32.53%</h3>
+                        <p className="text-danger d-flex">
+                          <i className="mdi mdi-menu-down"></i>
+                          <span>-0.5%</span>
+                        </p>
                       </div>
-                      <div className="card bg-light card-rounded col-md-2 me-1">
-                        <div className="card-body pb-0">
-                          <h4 className="card-title card-title-dash text-dark mb-4">
-                            Total Vendors
-                          </h4>
-                          <h3 className="rate-percentage">32.53%</h3>
-                          <p className="text-danger d-flex">
-                            <i className="mdi mdi-menu-down"></i>
-                            <span>-0.5%</span>
-                          </p>
-                        </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2">
+                    <div className="card bg-light card-rounded stretch-card">
+                      <div className="card-body pb-0">
+                        <h4 className="card-title card-title-dash text-dark mb-4">
+                          Total Vendors
+                        </h4>
+                        <h3 className="rate-percentage">32.53%</h3>
+                        <p className="text-danger d-flex">
+                          <i className="mdi mdi-menu-down"></i>
+                          <span>-0.5%</span>
+                        </p>
                       </div>
-                      <div className="card bg-light card-rounded col-md-2">
-                        <div className="card-body pb-0">
-                          <h4 className="card-title card-title-dash text-dark mb-4">
-                            Faulty Machines
-                          </h4>
-                          <h3 className="rate-percentage">32.53%</h3>
-                          <p className="text-danger d-flex">
-                            <i className="mdi mdi-menu-down"></i>
-                            <span>-0.5%</span>
-                          </p>
-                        </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2">
+                    <div className="card bg-light card-rounded stretch-card">
+                      <div className="card-body pb-0">
+                        <h4 className="card-title card-title-dash text-dark mb-4">
+                          Faulty Machines
+                        </h4>
+                        <h3 className="rate-percentage">32.53%</h3>
+                        <p className="text-danger d-flex">
+                          <i className="mdi mdi-menu-down"></i>
+                          <span>-0.5%</span>
+                        </p>
                       </div>
                     </div>
                   </div>
