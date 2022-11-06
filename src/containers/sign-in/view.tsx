@@ -6,7 +6,7 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 
 import { UserCredentials } from "./model";
-
+const logo =  require("../../assets/tsavo-erp-logo-removebg-preview.png");
 
 const SignInView = ({
   loading,
@@ -24,7 +24,7 @@ const SignInView = ({
        <div className="container">
        <div className="row w-100 mx-0">
           <div className="col-lg-12">
-            {/* <img src={logo}/> */}
+            <img src={logo} alt='logo' className="mb-1 center"/>
             <div className="auth-form-light text-left px-4">
               <div className="row">
                 <div className="col-lg-5 px-5 py-5" style={{

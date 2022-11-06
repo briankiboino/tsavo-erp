@@ -50,3 +50,11 @@
   color: #FFF;
   background: rgb(248, 42, 42);
 }
+
+.center{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  }
