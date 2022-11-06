@@ -6,7 +6,6 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 
 import { UserCredentials } from "./model";
-// import logo from "../../assets/tsavo-erp-logo.jpeg";
 
 
 const SignInView = ({
@@ -20,16 +19,19 @@ const SignInView = ({
 }) => {
   let histroy = useHistory();
   return (
-    <div className="container page-body-wrapper full-page-wrapper">
+    <div className="container-fluid page-body-wrapper full-page-wrapper">
       <div className="content-wrapper d-flex align-items-center auth px-0">
-        <div className="row w-100 mx-0">
+       <div className="container">
+       <div className="row w-100 mx-0">
           <div className="col-lg-12">
             {/* <img src={logo}/> */}
-            <div className="auth-form-light text-left py-5 px-4">
+            <div className="auth-form-light text-left px-4">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-5 px-5 py-5" style={{
+                  borderRight: "1px solid #E3E3E3"
+                }}>
                   <iframe
-                    width="500"
+                    width="430"
                     height="200"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY"
                   ></iframe>
@@ -37,7 +39,7 @@ const SignInView = ({
                   <p className="mb-4">Watch these tutorials to get most out of our Wealthbox</p>
                   <a href="#">Learn more</a>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-7 px-5 py-4">
                   <Formik
                     initialValues={credentials}
                     validationSchema={Yup.object({
@@ -57,6 +59,7 @@ const SignInView = ({
                         className="mt-4 pt-2 mb-4"
                         onSubmit={formik.handleSubmit}
                       >
+                        <h2 className="mb-4">Login</h2>
                         <div className="form-floating form-floating-custom mb-4">
                           <input
                             type="email"
@@ -126,6 +129,7 @@ const SignInView = ({
             </div>
           </div>
         </div>
+       </div>
       </div>
     </div>
   );
