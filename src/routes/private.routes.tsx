@@ -1,11 +1,10 @@
+/* eslint-disable */
 import React, { Component } from "react";
 import { RootState } from "@redux/index";
 import { connect } from "react-redux";
 import { Route, Redirect } from "react-router-dom";
-import { Footer, Header } from "../components";
+import { Header } from "../components";
 import SideBar from "../components/side-bar";
-
-// import SideBar from '../_components/layout/sidebar';
 
 const PrivateRoute = (props: any) => {
   return (
