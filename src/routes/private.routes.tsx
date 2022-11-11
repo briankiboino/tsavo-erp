@@ -11,10 +11,13 @@ const PrivateRoute = (props: any) => {
   return (
     <React.Fragment>
       <Header />
-      <div className="container-fluid page-body-wrapper">
+      <div className="page-body-wrapper">
         <SideBar />
-        <div className="main-panel">
-          <div className="content-wrapper">
+        <div className="body-wrapper clearfix">
+          <section
+            className="main-container bg-additional-grey"
+            id="fullscreen"
+          >
             <Route
               {...props}
               render={(props: any) =>
@@ -30,8 +33,7 @@ const PrivateRoute = (props: any) => {
                 )
               }
             />
-            <Footer />
-          </div>
+          </section>
         </div>
       </div>
     </React.Fragment>

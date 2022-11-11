@@ -10,204 +10,177 @@ const Dashboard = (props) => {
   // }, [])
 
   return (
-    <React.Fragment>
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="home-tab">
-            <div className="tab-content tab-content-basic">
-              <div
-                className="tab-pane fade show active"
-                id="overview"
-                role="tabpanel"
-                aria-labelledby="overview"
-              >
-                <div className="row mb-5">
-                  <div className="col-lg-2">
-                    <div className="card bg-light card-rounded stretch-card">
-                      <div className="card-body pb-0">
-                        <h4 className="card-title card-title-dash text-dark mb-4">
-                          Total Projects
-                        </h4>
-                        <h3 className="rate-percentage">32.53%</h3>
-                        <p className="text-danger d-flex">
-                          <i className="mdi mdi-menu-down"></i>
-                          <span>-0.5%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-2">
-                    <div className="card bg-light card-rounded stretch-card">
-                      <div className="card-body pb-0">
-                        <h4 className="card-title card-title-dash text-dark mb-4">
-                          Total Clients
-                        </h4>
-                        <h3 className="rate-percentage">32.53%</h3>
-                        <p className="text-danger d-flex">
-                          <i className="mdi mdi-menu-down"></i>
-                          <span>-0.5%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-2">
-                    <div className="card bg-light card-rounded stretch-card">
-                      <div className="card-body pb-0">
-                        <h4 className="card-title card-title-dash text-dark mb-4">
-                          Due Invoices
-                        </h4>
-                        <h3 className="rate-percentage">32.53%</h3>
-                        <p className="text-danger d-flex">
-                          <i className="mdi mdi-menu-down"></i>
-                          <span>-0.5%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-2">
-                    <div className="card bg-light card-rounded stretch-card">
-                      <div className="card-body pb-0">
-                        <h4 className="card-title card-title-dash text-dark mb-4">
-                          Pening Tasks
-                        </h4>
-                        <h3 className="rate-percentage">32.53%</h3>
-                        <p className="text-danger d-flex">
-                          <i className="mdi mdi-menu-down"></i>
-                          <span>-0.5%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-2">
-                    <div className="card bg-light card-rounded stretch-card">
-                      <div className="card-body pb-0">
-                        <h4 className="card-title card-title-dash text-dark mb-4">
-                          Total Vendors
-                        </h4>
-                        <h3 className="rate-percentage">32.53%</h3>
-                        <p className="text-danger d-flex">
-                          <i className="mdi mdi-menu-down"></i>
-                          <span>-0.5%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-2">
-                    <div className="card bg-light card-rounded stretch-card">
-                      <div className="card-body pb-0">
-                        <h4 className="card-title card-title-dash text-dark mb-4">
-                          Faulty Machines
-                        </h4>
-                        <h3 className="rate-percentage">32.53%</h3>
-                        <p className="text-danger d-flex">
-                          <i className="mdi mdi-menu-down"></i>
-                          <span>-0.5%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-8 d-flex flex-column">
-                    <div className="row flex-grow">
-                      <div className="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                        <div className="card card-rounded">
-                          <div className="card-body">
-                            <div className="d-sm-flex justify-content-between align-items-start">
-                              <div>
-                                <h4 className="card-title card-title-dash">
-                                  Performance Line Chart
-                                </h4>
-                                <h5 className="card-subtitle card-subtitle-dash">
-                                  Lorem Ipsum is simply dummy text of the
-                                  printing
-                                </h5>
-                              </div>
-                              <div id="performance-line-legend"></div>
-                            </div>
-                            <div className="chartjs-wrapper mt-5">
-                              <canvas id="performaneLine"></canvas>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 d-flex flex-column">
-                    <div className="row flex-grow">
-                      <div className="col-12 grid-margin stretch-card">
-                        <div className="card card-rounded">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-lg-12">
-                                <div className="d-flex justify-content-between align-items-center mb-3">
-                                  <h4 className="card-title card-title-dash">
-                                    Type By Amount
-                                  </h4>
-                                </div>
-                                <canvas
-                                  className="my-auto"
-                                  id="doughnutChart"
-                                  height="200"
-                                ></canvas>
-                                <div
-                                  id="doughnut-chart-legend"
-                                  className="mt-5 text-center"
-                                ></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6 col-lg-12 grid-margin stretch-card">
-                        <div className="card card-rounded">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-6">
-                                <div className="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
-                                  <div className="circle-progress-width">
-                                    <div
-                                      id="totalVisitors"
-                                      className="progressbar-js-circle pr-2"
-                                    ></div>
-                                  </div>
-                                  <div>
-                                    <p className="text-small mb-2">
-                                      Total Visitors
-                                    </p>
-                                    <h4 className="mb-0 fw-bold">26.80%</h4>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-sm-6">
-                                <div className="d-flex justify-content-between align-items-center">
-                                  <div className="circle-progress-width">
-                                    <div
-                                      id="visitperday"
-                                      className="progressbar-js-circle pr-2"
-                                    ></div>
-                                  </div>
-                                  <div>
-                                    <p className="text-small mb-2">
-                                      Visits per day
-                                    </p>
-                                    <h4 className="mb-0 fw-bold">9065</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <div className="px-4 py-0 py-lg-3  border-top-0 admin-dashboard">
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+          <a href="https://demo.worksuite.biz/account/clients">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Total Clients
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">9</span>
+                  </p>
                 </div>
               </div>
+              <div class="d-block">
+                <i class="fa fa-users text-lightest f-18"></i>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+          <a href="https://demo.worksuite.biz/account/employees">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Total Employees
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">10</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-user text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+          <a href="https://demo.worksuite.biz/account/projects">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Total Projects
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">8</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-layer-group text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+          <a href="https://demo.worksuite.biz/account/invoices?status=pending">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Due Invoices
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">8</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-file-invoice text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <a href="https://demo.worksuite.biz/account/time-log-report">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Hours Logged
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">48 hrs </span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-clock text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <a href="https://demo.worksuite.biz/account/tasks?status=pending_task&amp;type=public">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Pending Tasks
+                  <i
+                    class="fa fa-question-circle"
+                    data-toggle="popover"
+                    data-placement="top"
+                    data-content="Private tasks not included"
+                    data-html="true"
+                    data-trigger="hover"
+                  ></i>
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">13</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-tasks text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <a href="https://demo.worksuite.biz/account/attendances">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Today Attendance
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">0/10</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-calendar-check text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <a href="https://demo.worksuite.biz/account/tickets?status=open">
+            <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+              <div class="d-block text-capitalize">
+                <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">
+                  Unresolved Tickets
+                </h5>
+                <div class="d-flex">
+                  <p class="mb-0 f-15 font-weight-bold text-blue text-primary d-grid">
+                    <span id="">4</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-block">
+                <i class="fa fa-ticket-alt text-lightest f-18"></i>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

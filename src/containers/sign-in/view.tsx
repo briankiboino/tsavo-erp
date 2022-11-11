@@ -19,24 +19,24 @@ const SignInView = ({
 }) => {
   let histroy = useHistory();
   return (
-    <div className="container-fluid page-body-wrapper full-page-wrapper">
+    <div className="container-fluid bg-grey login_section">
       <div className="content-wrapper d-flex align-items-center auth px-0">
-       <div className="container">
-       <div className="row w-100 mx-0">
+       <div className="container d-flex align-items-center">
+       <div className="row w-100 mx-0" style={{ margin: "auto" }}>
           <div className="col-lg-12">
             <img src={logo} alt='logo' className="mb-1 center"/>
-            <div className="auth-form-light text-left px-4">
+            <div className="auth-form-light text-left px-4 bg-light">
               <div className="row">
                 <div className="col-lg-5 px-5 py-5" style={{
                   borderRight: "1px solid #E3E3E3"
                 }}>
                   <iframe
-                    width="430"
+                    width="350"
                     height="200"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY"
                   ></iframe>
-                  <h2 className="mt-4 mb-4">Product Tours</h2>
-                  <h5 className="mb-4">Watch these tutorials to get most out of our Wealthbox</h5>
+                  <h2 className="mt-4 mb-4 heading-5">Product Tours</h2>
+                  <h6 className="mb-4 heading-5">Watch these tutorials to get most out of our Wealthbox</h6>
                   <a href="#">Learn more</a>
                 </div>
                 <div className="col-lg-7 px-5 py-4">
@@ -61,17 +61,14 @@ const SignInView = ({
                       >
                         <h2 className="mb-4">Login</h2>
                         <div className="form-floating form-floating-custom mb-4">
+                        <label htmlFor="email">Email Address</label>
                           <input
                             type="email"
-                            className="form-control"
+                            className="form-control height-50 f-15 light_text"
                             id="email"
                             placeholder="Email"
                             {...formik.getFieldProps("email")}
                           />
-                          <label htmlFor="input-username">Username</label>
-                          <div className="form-floating-icon">
-                            <i className="bx bx-user"></i>
-                          </div>
                         </div>
                         {formik.touched.email && formik.errors.email ? (
                           <div className="validation-error">
@@ -79,9 +76,10 @@ const SignInView = ({
                           </div>
                         ) : null}
                         <div className="form-floating form-floating-custom mb-4 auth-pass-inputgroup">
+                        <label htmlFor="password">Password</label>
                           <input
                             type="password"
-                            className="form-control"
+                            className="form-control height-50 f-15 light_text"
                             id="password"
                             placeholder=" Password"
                             {...formik.getFieldProps("password")}
@@ -92,10 +90,6 @@ const SignInView = ({
                             className="btn btn-link position-absolute h-100 end-0 top-0"
                             id="password-addon"
                           ></button>
-                          <label htmlFor="input-password">Password</label>
-                          <div className="form-floating-icon">
-                            <i className="bx bx-lock"></i>
-                          </div>
                         </div>
                         {formik.touched.password && formik.errors.password ? (
                           <div className="validation-error">
@@ -105,7 +99,7 @@ const SignInView = ({
 
                         <div className="mb-4">
                           <button
-                            className="btn btn-primary w-100 waves-effect waves-light text-bold"
+                            className="btn btn-primary w-100 waves-effect waves-light text-bold f-w-500 rounded w-100 height-50 f-18"
                             type="submit"
                           >
                             {loading ? (
@@ -116,10 +110,10 @@ const SignInView = ({
                           </button>
                         </div>
                         <div className="mb-3 d-flex justify-content-between">
-                          <h5>
+                          <label>
                             New to Tsavo? <a href="#">Sign up</a>
-                          </h5>
-                          <h5>Forgot password?</h5>
+                          </label>
+                          <label>Forgot password?</label>
                         </div>
                       </form>
                     )}
