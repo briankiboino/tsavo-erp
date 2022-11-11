@@ -2,12 +2,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import {
-  Customers,
   Dashboard,
   ForgotPassword,
   SignIn,
-  MyCases,
-  SingleCase,
 } from "../containers";
 import { NotFound, InternalServerError } from "../components";
 import PrivateRoute from "./private.routes";
@@ -19,20 +16,7 @@ const Routes = (props: any) => (
       <PublicRoute path="/" exact component={SignIn} />
       <PublicRoute path="/forgot-password" exact component={ForgotPassword} />
       <PrivateRoute path="/dashboard" exact component={Dashboard} />
-      <PrivateRoute
-        path="/risk-management/customers"
-        exact
-        component={Customers}
-      />
-      <PrivateRoute
-        path="/risk-management/my-cases"
-        exact
-        component={MyCases}
-      />
-      <PrivateRoute
-        path="/risk-management/case-management/case/:id"
-        component={SingleCase}
-      />
+
       <PublicRoute
         path="/internal-server-error"
         exact
